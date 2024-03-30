@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/btnread"
+        android:layout_width="200dp"
+        android:layout_height="57dp"
+        android:text="Read Message"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etmsg"
+        app:layout_constraintVertical_bias="0.349" />
+
+    <EditText
+        android:id="@+id/etmsg"
+        android:layout_width="338dp"
+        android:layout_height="164dp"
+        android:ems="10"
+        android:gravity="start|top"
+        android:hint="Enter Message to be stored"
+        android:inputType="textMultiLine"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.088" />
+
+    <Button
+        android:id="@+id/btnwrite"
+        android:layout_width="200dp"
+        android:layout_height="57dp"
+        android:text="Write Message"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etmsg"
+        app:layout_constraintVertical_bias="0.104" />
+
+    <TextView
+        android:id="@+id/tvmsg"
+        android:layout_width="337dp"
+        android:layout_height="179dp"
+        android:text="TextView"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.581"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnread"
+        app:layout_constraintVertical_bias="0.413"
+        android:visibility="gone"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

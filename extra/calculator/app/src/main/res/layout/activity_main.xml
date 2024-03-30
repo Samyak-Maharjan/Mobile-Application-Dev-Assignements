@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTint="#EC3C3C"
+    tools:context=".MainActivity">
+
+    <ImageButton
+        android:id="@+id/btnadd"
+        android:layout_width="128dp"
+        android:layout_height="88dp"
+        android:layout_marginTop="140dp"
+        android:layout_marginEnd="244dp"
+        android:backgroundTint="#ffffff"
+        android:scaleType="fitStart"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et2"
+        app:srcCompat="@drawable/add" />
+
+    <ImageButton
+        android:id="@+id/btnmul"
+        android:layout_width="128dp"
+        android:layout_height="88dp"
+        android:layout_marginTop="296dp"
+        android:layout_marginEnd="244dp"
+        android:backgroundTint="#ffffff"
+        android:scaleType="fitStart"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et2"
+        app:srcCompat="@drawable/mul" />
+
+    <ImageButton
+        android:id="@+id/btndiv"
+        android:layout_width="128dp"
+        android:layout_height="88dp"
+        android:layout_marginTop="296dp"
+        android:layout_marginEnd="44dp"
+        android:backgroundTint="#ffffff"
+        android:scaleType="fitStart"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et2"
+        app:srcCompat="@drawable/div" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Simple calculator"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.06" />
+
+    <EditText
+        android:id="@+id/et1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="100dp"
+        android:ems="10"
+        android:hint="Enter a value"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <EditText
+        android:id="@+id/et2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="100dp"
+        android:ems="10"
+        android:hint="Enter second number"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et1" />
+
+    <ImageButton
+        android:id="@+id/btnsub"
+        android:layout_width="128dp"
+        android:layout_height="88dp"
+        android:layout_marginTop="140dp"
+        android:layout_marginEnd="44dp"
+        android:backgroundTint="#ffffff"
+        android:scaleType="fitStart"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et2"
+        app:srcCompat="@drawable/sub" />
+
+    <TextView
+        android:id="@+id/tvres"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="52dp"
+        android:layout_marginEnd="248dp"
+        android:text="Answer is"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et2" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="216dp"
+        android:text="Samyak Maharjan 20BTRSE076"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
